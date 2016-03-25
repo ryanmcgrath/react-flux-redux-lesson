@@ -60,7 +60,7 @@ Bringing this into our configuration file presents a point worth considering: is
     // free to remove them for now, as we'll cover testing options in Session 4.
     "scripts": {
         "build": "webpack",
-        "start": "webpack-dev-server --inline"
+        "start": "webpack-dev-server --inline --hot"
     }
 ```
 
