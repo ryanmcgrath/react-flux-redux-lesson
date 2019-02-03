@@ -1,3 +1,6 @@
+# NOTICE
+This tutorial uses outdated versions of webpack and webpack-dev-server. The logic and approach below should still work, but be sure to upgrade your dependencies!
+
 # Class 2: Data Storage with React
 Welcome back! In our last session we took an in-depth look at setting up your React development environment, making use of npm, Webpack, and Babel. In this session, we'll be building on top of that setup to build React applications that manage data storage. We'll be touching on the following points:
 
@@ -164,10 +167,6 @@ A typical Flux setup can be broken down into a few pieces:
 - **Views**
   - Your components! Views listen (subscribe) to Stores and update as Stores emit change events.
   - Views can also call actions, essentially restarting the chain at the Dispatcher level.
-
-The Flux documentation has a flowchart that showcases this pretty well (for convenience, it's included below).
-
-![Flux Flowchart](http://venodesigns.net/flux_overview_graphic.png)
 
 A Flux setup would end up looking something like the following - it's a simple TODO list, commented liberally from the top down. It illustrates the
 architecture choices of Flux a bit more. Actions act as a uniform dispatcher access point from components, and listening to changes on the store kicks
